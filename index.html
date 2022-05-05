@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="quiz_style.css">
+<title>四択クイズ</title>
+</head>
+<body>
+  <div id="can">
+      <div id="contains">
+        <h2 id="number"></h2>
+        <div id="flex_wrap">
+            <p id="question"></p>
+        </div>
+      </div>  
+      <div id="lists">
+          <button class="list"></button>
+          <button class="list"></button>
+          <button class="list"></button>
+          <button class="list"></button>
+      </div>
+      <audio id="correct_sound" src="Quiz-Correct_Answer02-1 (online-audio-converter.com).wav"></audio>
+      <audio id="wrong_sound" src="Quiz-Wrong_Buzzer02-2 (online-audio-converter.com).wav"></audio>
+   </div> 
+  <div class="menu_wrap">
+    <div id="correct_menu" class="menu_hidden menu-js">
+        <p id="correct_content">正解！</p>
+        <p class="menu_btn">次へ進む</p>
+    </div>
+    <div id="wrong_menu" class="menu_hidden menu-js">
+        <p id="wrong_content">残念...</p>
+        <p class="menu_btn">次へ進む</p>
+    </div>
+  </div>
+    <div class="menu_wrap">
+      <div id="replay_menu" class="menu_hidden">
+        <div id="result_wrap">
+          <h2 id="result" class="result-animate"></h2>
+        </div>
+        <section id="result_detail">
+            <p>問題と解答</p>
+            <!-- 結果の詳細 -->
+        </section>
+        <p id="replay_btn">
+            リトライ
+
+        </p>
+      </div>
+    </div>
+<script src="script.js"></script>
+<!-- <script src="https://kit.fontawesome.com/8a59e0a2a6.js" crossorigin="anonymous"></script> -->
+</body>
+</html>
