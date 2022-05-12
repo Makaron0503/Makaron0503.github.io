@@ -183,5 +183,6 @@ a{
     #can{
         justify-content: flex-start;
         height: fit-content;
+        min-height: 200px;
     }
     }
